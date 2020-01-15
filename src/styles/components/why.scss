@@ -1,0 +1,19 @@
+.why {
+  background: imgPath("decor/side-leaf.png") left top 40% no-repeat;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: imgPath("decor/bars-and-berries.png") center center no-repeat;
+    width: 161px;
+    height: 315px;
+  }
+}
+
+.why__title {
+  margin-bottom: 57px;
+}

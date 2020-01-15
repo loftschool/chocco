@@ -1,19 +1,22 @@
-section.why
+section.section.section--centered.why
   .container
-    .title Почему chocco?
-    .subtitle В нашем мире все происходит очень быстро, поэтому мы делаем батончики которые удобно взять с собой
+    .why__title
+      .title Почему chocco?
+      .subtitle В нашем мире все происходит очень быстро, поэтому мы делаем батончики которые удобно взять с собой
 
     - 
       var items = [
         ['person', "Полезно", "Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты."],
         ['hearts', "Вкусно", "Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков."],
-        ['person', "Питательно", "Высокое содержание качественного белка, а также всех необходимых витаминов и минералов."],
+        ['biceps', "Питательно", "Высокое содержание качественного белка, а также всех необходимых витаминов и минералов."],
       ];
 
     ul.benefits
       each item in items
-        li.benefits__items
-          .benefits__image #{item[0]}
+        li.benefits__item
+          .benefits__image 
+            .benefits__icon-wrapper
+              +icon(item[0], "benefits__icon")
           .benefits__title #{item[1]}
-          .benefits__text #{item[3]}
+          .benefits__text #{item[2]}
       
