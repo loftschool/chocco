@@ -1,0 +1,17 @@
+include ./common/mixins
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    meta(content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport")
+    
+    title CHOCCO
+
+    link(rel='stylesheet' href='main.min.css')
+  body
+    .wrapper
+      .maincontent
+        block content
