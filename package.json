@@ -34,6 +34,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprite": "^1.4.0",
     "gulp-svgmin": "^2.0.0",
@@ -50,8 +51,5 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ],
-  "dependencies": {
-    "normalize.css": "^7.0.0"
-  }
+  ]
 }
