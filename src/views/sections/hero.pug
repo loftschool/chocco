@@ -1,0 +1,28 @@
+section.hero
+  .container
+    header.header
+      .logo
+      .header__btns
+        - var items = ["О нас", "Батончики", "Команда", "Меню", "Отзывы", "Как мы работаем", "Контакты"];
+        ul.menu
+          each item in items
+            li.menu__item
+              a.menu__item-link(href="") #{item}
+        a(href="").phone-number
+      
+    .hero__content
+      .hero__title-section
+        .hero__main-title Натуральные шоколадные       
+        .hero__subtitle Наши батончики идеально подходят для тех кто следит за своим здоровьем
+      .hero__icons-section
+        - 
+          var items = [
+            ['leaf', "100% Натуральный продукт"],
+            ['truck', "3-5 дней доставка по РФ"],
+            ['measure', "Не портит фигуру"],
+          ];
+        ul.hero__icon
+          each item in items 
+            li.hero__icon-item #{item[0]}
+        
+      
