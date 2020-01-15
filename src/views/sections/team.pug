@@ -1,0 +1,21 @@
+section.section.section--centered.team-section
+  .container 
+    .title Команда
+    - 
+      var items = [
+        ["boroda", "Борис Федерович"],
+        ["smile", "Алла Иванова"],
+        ["yellow", "Кирилл Матросов"],
+        ["serious", "Мила Рыжкова"],
+      ]
+
+    ul.team
+      each item in items
+        li.team__item
+          .team__member
+            +image(`content/${item[0]}.jpg`, `участник команды ${item[0]}`, "team__member-pic")
+          .team__title #{item[1]}
+          .team__content
+            .team__occ Оператор
+            .team__content-text С радостью поможет подобрать батончики и оформить заказ
+          
