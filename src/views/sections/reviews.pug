@@ -1,0 +1,22 @@
+section.section.reviews.section--centered
+  .container
+    .title Отзывы
+    .reviews__display
+      .reviews__avatar
+        +image("content/beauty.jpg", "фото автора отзыва", "reviews__avatar-pic")
+      .reviews__text
+        .reviews__title Лучший перекус
+        .reviews__content
+          | Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
+          | и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
+          | и удобно. 
+        .reviews__author Алёна Хмельницкая
+
+    - var items = ["beauty", "ginger", "guy"];
+
+    ul.reviews-switcher
+      each item in items
+        li.reviews-switcher__item
+          a.reviews-switcher__link
+            +image(`content/${item}.jpg`, "фото автора отзыва", "reviews-switcher__pic")
+
