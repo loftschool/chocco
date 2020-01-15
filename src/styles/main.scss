@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&display=swap&subset=cyrillic');
-@import "../../node_modules/normalize.css/normalize.css";
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
 
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&display=swap&subset=cyrillic');
+
+@import "./layout/mixins.scss";
+@import "./layout/normalize.scss";
 @import "./layout/base.scss";
+
+@import "./components/*.scss";

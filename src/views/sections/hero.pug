@@ -1,28 +1,32 @@
-section.hero
-  .container
+section.section.hero
+  .container.hero__container
     header.header
-      .logo
+      +image("logo.png", "chocco logo", "logo")
       .header__btns
         - var items = ["О нас", "Батончики", "Команда", "Меню", "Отзывы", "Как мы работаем", "Контакты"];
         ul.menu
           each item in items
             li.menu__item
               a.menu__item-link(href="") #{item}
-        a(href="").phone-number
+        a(href="").phone-number 8 800 903 90 90
       
-    .hero__content
-      .hero__title-section
-        .hero__main-title Натуральные шоколадные       
-        .hero__subtitle Наши батончики идеально подходят для тех кто следит за своим здоровьем
-      .hero__icons-section
-        - 
-          var items = [
-            ['leaf', "100% Натуральный продукт"],
-            ['truck', "3-5 дней доставка по РФ"],
-            ['measure', "Не портит фигуру"],
-          ];
-        ul.hero__icon
-          each item in items 
-            li.hero__icon-item #{item[0]}
+    .hero__title-section
+      .hero__main-title Натуральные шоколадные батончики
+      .hero__subtitle Наши батончики идеально подходят для тех кто следит за своим здоровьем
+      .hero__button
+        a(href="").btn.btn--shadowed.btn--color--white Заказать
+    .hero__icons-section
+      - 
+        var items = [
+          ['leaf', "100% Натуральный продукт"],
+          ['truck', "3-5 дней доставка по РФ"],
+          ['measure', "Не портит фигуру"],
+        ];
+      ul.hero__icons
+        each item in items 
+          li.hero__icon-item
+            .hero__icon-pic
+              +icon(`${item[0]}`, "hero__icon-elem")
+            .hero__icon-text #{item[1]}
         
       
