@@ -1,0 +1,55 @@
+section.section.section--centered.products-section
+  .container
+    ul.products
+      li.products__item
+        .products__container
+          .products__col
+            .products__image
+          .products__col
+            .products__ingredients
+              .ingredients
+                .ingredients__button
+                  .ingredients__button-icon
+                  .ingredients__button-text
+                .ingredients__dropdown
+                  -
+                    var items = [
+                      ['bareley', "Овес", "25г"],
+                      ['seaweed', "Мор. водоросли", "25г"],
+                      ['almond', "Миндаль", "25г"],
+                      ['milk', "Сухое молоко", "25г"],
+                      ['pumpkin', "Тыкв. семечки", "25г"],
+                      ['sugar', "Зам. сахара", "25г"],
+                      ['cocoa', "Какао бобы", "25г"],
+                    ];
+
+                  table.ingredients__table
+                    each item in items
+                      tr
+                        td
+                        td #{item[1]}
+                        td #{item[2]}
+
+            .products__title Батончик морские водоросли
+            .products__text
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ipsum autem soluta illo saepe modi eos, iure doloremque totam, praesentium asperiores! Repudiandae voluptatem officia esse quasi, tempore culpa vel incidunt!
+            .products__values 
+              .products__values-row 
+                .products__values-block
+                  .products__values-title Калорийность
+                  .products__values-amount 120 ккал
+                .products__values-block
+                  .products__values-title Вес
+                  .products__values-amount 98 грамм
+              
+              .products__values-row 
+                .products__values-block
+                  .products__values-rub 140
+                .products__values-block
+                  a.btn Заказать
+
+
+              
+
+
+
