@@ -1,6 +1,6 @@
 section.section.section--centered.order
   .container
-    .title Закажите доставку
+    .title.order__title Закажите доставку
     - 
       var rows = [
         ["Имя", "Телефон"],
@@ -9,31 +9,32 @@ section.section.section--centered.order
       ];
 
     form.form
-      .form__col
-        each row in rows
+      .form__container
+        .form__col
+          each row in rows
+            .form__row
+              each block in row
+                label.form__block
+                  .form__block-title #{block}
+                  input(type="text").form__block-input
+        .form__col
           .form__row
-            each block in row
-              label.form__block
-                .form__block-title #{block}
-                input(type="text").form__block-input
-      .form__col
-        .form__row
-          label.form__block
-            .form__block-title Комментарий
-            textarea.form__block-inpu.form__block-input--elem--textarea
-        .form__row
-          .form__controls
-            - var items = ["Потребуется сдача", "Оплата по карте"];
-            each item in items
-              label.radio
-                input(type="radio").radio__elem
-                .radio__visible
-                .radio__text #{item}
-          .form__controls
-              label.radio
-                input(type="checkbox").radio__elem
-                .radio__visible
-                .radio__text Не перезванивать
-        .form__controls
-          button(type="submit").btn Заказать
-          button(type="reset").btn Очистить
+            label.form__block
+              .form__block-title Комментарий
+              textarea.form__block-input.form__block-input--elem--textarea
+          .form__row.form__row--vertical
+            .form__controls
+              - var items = ["Потребуется сдача", "Оплата по карте"];
+              each item in items
+                label.radio
+                  input(type="radio" name="payment").radio__elem
+                  .radio__visible
+                  .radio__text #{item}
+            .form__controls
+                label.radio.radio--checkbox
+                  input(type="checkbox").radio__elem
+                  .radio__visible
+                  .radio__text Не перезванивать
+          .form__controls.form__controls-btns
+            button(type="submit").btn Заказать
+            button(type="reset").btn.btn--color--transparent Очистить

@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
+  min-height: 650px;
 
   &--centered {
     justify-content: center;
@@ -67,9 +68,6 @@ p {
 
 button {
   border: 0;
-}
-
-button[type="button"] {
   cursor: pointer;
 }
 

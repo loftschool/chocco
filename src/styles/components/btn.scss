@@ -10,7 +10,7 @@
   border-radius: 100px;
   line-height: 1;
 
-  &:not(.btn--color--white):hover {
+  &:hover {
     background: #0f5a47;
     text-decoration: none;
   }
@@ -19,9 +19,24 @@
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4);
   }
 
-  &--color--white {
-    background: #fff;
-    color: $darkGreen;
-    text-decoration: none !important;
+  &--color {
+    &--white {
+      background: #fff;
+      color: $darkGreen;
+      text-decoration: none !important;
+    }
+
+    &--transparent {
+      background: transparent;
+      text-transform: unset;
+      color: $darkGreen;
+
+      &:hover {
+        background: transparent !important;
+        text-decoration: underline;
+      }
+    }
   }
+
+
 }
