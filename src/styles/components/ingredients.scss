@@ -1,0 +1,55 @@
+.ingredients {
+  position: relative;
+  display: inline-block;
+}
+
+.ingredients__button {
+  width: 90px;
+  height: 90px;
+  background: $blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.ingredients__button-icon-elem {
+  fill: currentColor;
+  width: 51px;
+  height: 51px;
+}
+
+.ingredients__button-text {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ingredients__dropdown {
+  color: #2f3234;
+}
+
+.ingredients__dropdown {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 270px;
+  background: rgba(255, 255, 255, .93);
+  border-radius: 5px;
+  padding: 26px 35px;
+}
+
+.ingredients__table {
+  width: 100%;
+}
+
+.ingredients__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.ingredients__text {
+  font-size: 16px;
+  font-weight: bold;
+}
