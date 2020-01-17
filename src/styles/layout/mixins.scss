@@ -1,5 +1,5 @@
 @function imgPath($path) {
-  @return url("/assets/images/" + $path);
+  @return url("/assets/images/"+ $path);
 }
 
 @mixin centered() {
@@ -7,4 +7,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin berries() {
+  position: relative;
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: center center no-repeat;
+  }
+
+  @content;
 }

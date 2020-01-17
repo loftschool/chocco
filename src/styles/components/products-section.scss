@@ -1,4 +1,26 @@
 .products-section {
   background: #f8faf9;
-}
+  position: relative;
 
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    background: imgPath("decor/grey-striped-leaf.png") center center no-repeat;
+    width: 169px;
+    height: 578px;
+    bottom: -200px;
+    right: 0;
+  }
+
+  &:after {
+    background: imgPath("decor/blackberries.png") center center no-repeat;
+    width: 135px;
+    height: 112px;
+    bottom: -200px;
+    right: 0;
+  }
+}

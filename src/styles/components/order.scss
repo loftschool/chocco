@@ -1,5 +1,8 @@
 .order {
-  background: imgPath("bg/order.jpg") center center / cover no-repeat;
+  background: 
+  imgPath("decor/lonely-blackberry.png") center center no-repeat,
+  imgPath("decor/lonely-leaf.png") center center no-repeat,
+  imgPath("bg/order.jpg") center center / cover no-repeat;
   color: $darkGreen;
 }
 

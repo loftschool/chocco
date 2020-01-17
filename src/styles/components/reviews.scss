@@ -1,5 +1,19 @@
 .reviews {
   background: imgPath("decor/strawberry-cereal.png") right 20px top 10px no-repeat;
+
+  @include berries {
+    &:before {
+      background-image: imgPath("decor/side-round-leaf.png");
+      width: 102px;
+      height: 321px;
+    }
+
+    &:after {
+      background-image: imgPath("decor/assorted-berries.png");
+      width: 135px;
+      height: 193px;
+    }
+  }
 }
 
 .reviews__container {

@@ -1,5 +1,15 @@
 .how-section {
   background: #f8faf9;
+
+  @include berries {
+    &:before {
+      background-image: imgPath("decor/blackberry-and-leaves.png");
+      width: 197px;
+      height: 264px;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
 
 .how-section__container {
