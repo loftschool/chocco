@@ -11,12 +11,14 @@
 
 @mixin berries() {
   position: relative;
+
   &:after,
   &:before {
     content: "";
     display: block;
     position: absolute;
     background: center center no-repeat;
+    z-index: 1;
   }
 
   @content;

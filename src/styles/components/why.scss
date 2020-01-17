@@ -2,17 +2,16 @@
   background: imgPath("decor/side-leaf.png") left top 57% no-repeat;
   position: relative;
 
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -133px;
-    left: 0;
-    background: imgPath("decor/bars-and-berries.png") center center no-repeat;
-    width: 161px;
-    height: 315px;
-    z-index: 1;
+  @include berries {
+    &:before {
+      background-image: imgPath("decor/bars-and-berries.png");
+      bottom: -133px;
+      left: 0;
+      width: 161px;
+      height: 315px;
+    }
   }
+
 }
 
 .why__title {

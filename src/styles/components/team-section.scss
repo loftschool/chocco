@@ -1,14 +1,12 @@
 .team-section {
-  position: relative;
-
-  &:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    display: block;
-    background: imgPath("decor/single-berry.png") center center no-repeat;
-    width: 104px;
-    height: 114px;
+  @include berries {
+    &:after {
+      bottom: -46px;
+      left: 34px;
+      display: block;
+      background-image: imgPath("decor/single-berry.png");
+      width: 104px;
+      height: 114px;
+    }
   }
 }

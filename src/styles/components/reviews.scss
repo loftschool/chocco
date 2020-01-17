@@ -6,12 +6,16 @@
       background-image: imgPath("decor/side-round-leaf.png");
       width: 102px;
       height: 321px;
+      bottom: -160px;
+      left: 0;
     }
 
     &:after {
       background-image: imgPath("decor/assorted-berries.png");
       width: 135px;
       height: 193px;
+      bottom: -87px;
+      left: 4px;
     }
   }
 }

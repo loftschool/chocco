@@ -19,29 +19,22 @@
 }
 
 .products__image {
-  position: relative;
+  @include berries {
+    &:before {
+      background-image: imgPath("decor/leaf-1.png");
+      width: 75px;
+      height: 92px;
+      top: 23%;
+      left: -13%;
+    }
 
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-  }
-
-  &:before {
-    background: imgPath("decor/leaf-1.png") center center no-repeat;
-    width: 75px;
-    height: 92px;
-    top: 23%;
-    left: -13%;
-  }
-
-  &:after {
-    background: imgPath("decor/leaf-2.png") center center no-repeat;
-    width: 99px;
-    height: 73px;
-    right: 12%;
-    bottom: -5%;
+    &:after {
+      background-image: imgPath("decor/leaf-2.png");
+      width: 99px;
+      height: 73px;
+      right: 12%;
+      bottom: -5%;
+    }
   }
 }
 
