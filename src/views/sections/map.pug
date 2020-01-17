@@ -1,0 +1,15 @@
+section.section.map-section
+
+  footer.footer
+    .container.footer__container
+      address.contacts
+        .contacts__place Москва, ул.Новый Арбат, д.31/12
+        .contacts__phone
+          a(href="").phone-number 8 800 903 90 90
+      - var items = ["vk", "f", "in", "tw"];
+      ul.socials
+        each item in items
+          li.socials__item
+            a(href="").socials__link
+              +icon(item, "socials__icon")
+        
