@@ -1,0 +1,29 @@
+.video {
+  width: 660px;
+  height: 405px;
+  border: 1px solid black;
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    background: imgPath("decor/video-leaf-top.png") center center no-repeat;
+    width: 90px;
+    height: 77px;
+    top: 0;
+    right: -200px;
+  }
+
+  &:after {
+    background: imgPath("decor/video-leaf-bottom.png") center center no-repeat;
+    width: 72px;
+    height: 135px;
+    top: 0;
+    left: -200px;
+  }
+
+}
