@@ -1,6 +1,6 @@
 .btn {
   height: 58px;
-  padding: 20px 35px;
+  padding: 20px 38px;
   display: inline-block;
   background: $darkGreen;
   color: #fff;
@@ -17,6 +17,11 @@
 
   &--shadowed {
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  &--shortened {
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
   &--color {

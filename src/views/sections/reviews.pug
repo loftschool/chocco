@@ -1,5 +1,5 @@
 section.section.reviews.section--centered
-  .container
+  .container.reviews__container
     .title Отзывы
     .reviews__display
       .reviews__avatar
@@ -16,7 +16,7 @@ section.section.reviews.section--centered
 
     ul.reviews-switcher
       each item in items
-        li.reviews-switcher__item
+        li.reviews-switcher__item(class=`${item === 'beauty' ? 'active' : ''}`)
           a.reviews-switcher__link
             +image(`content/${item}.jpg`, "фото автора отзыва", "reviews-switcher__pic")
 

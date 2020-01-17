@@ -14,16 +14,16 @@
     background: imgPath("decor/video-leaf-top.png") center center no-repeat;
     width: 90px;
     height: 77px;
-    top: 0;
-    right: -200px;
+    top: -16%;
+    right: -16%;
   }
 
   &:after {
     background: imgPath("decor/video-leaf-bottom.png") center center no-repeat;
     width: 72px;
     height: 135px;
-    top: 0;
-    left: -200px;
+    bottom: -10%;
+    left: -22%;
   }
 
 }

@@ -8,9 +8,18 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  overflow: hidden; 
-  border: 6px solid #0f5a47;
+  overflow: hidden;
+  border: 6px solid transparent;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #0f5a47;
+  }
+
+  &.active {
+    border-color: #0f5a47;
+  }
 }
 
 .reviews-switcher__link {

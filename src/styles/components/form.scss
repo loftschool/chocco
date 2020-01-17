@@ -12,7 +12,7 @@
 }
 
 .form__row {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   display: flex;
 
   &:last-child {
@@ -34,7 +34,7 @@
 }
 
 .form__controls-btns {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .form__block {
@@ -47,11 +47,16 @@
   }
 }
 
+
+.form__block-title {
+  margin-bottom: 5px;
+}
+
 .form__block-input {
   width: 100%;
   background: #fff;
   border: 0 none;
-  padding: 22px 10px;
+  padding: 20px 10px;
 
   &--elem--textarea {
     height: 180px;

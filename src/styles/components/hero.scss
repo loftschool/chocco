@@ -1,6 +1,6 @@
 .hero {
   background:
-    imgPath("decor/chocolates.png") left 70% center no-repeat,
+    imgPath("decor/chocolates.png") left 78% center no-repeat,
     imgPath("decor/big-leaf.png") right bottom no-repeat;
   background-color: $blue;
   color: #fff;
@@ -41,7 +41,7 @@
 }
 
 .hero__title-section {
-  width: 50%;
+  width: 46%;
 }
 
 .hero__main-title {
@@ -49,10 +49,12 @@
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .hero__subtitle {
   font-size: 21px;
+  margin-bottom: 26px;
 }
 
 .hero__icons {
@@ -62,7 +64,7 @@
 
 .hero__icon-item {
   display: flex;
-  margin-right: 40px;
+  margin-right: 33px;
 
   &:last-child {
     margin-right: 0;
@@ -71,6 +73,7 @@
 
 .hero__icon-pic {
   fill: #fff;
+  margin-right: 6px;
 }
 
 .hero__icon-elem {
@@ -81,4 +84,6 @@
 
 .hero__icon-text {
   max-width: 85px;
+  line-height: 1.2;
+  font-size: 16px;
 }

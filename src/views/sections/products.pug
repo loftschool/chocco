@@ -27,12 +27,12 @@ section.section.section--centered.products-section
 
                   table.ingredients__table
                     each item in items
-                      tr
-                        td
+                      tr.ingredients__table-row
+                        td.ingredients__table-cell.ingredients__icon-container
                           +icon(item[0], "ingredients__icon")
-                        td 
+                        td.ingredients__table-cell.ingredients__text-container
                           span.ingredients__text #{item[1]}
-                        td
+                        td.ingredients__table-cell
                           span.ingredients__text #{item[2]}
 
             .products__title Батончик морские водоросли
@@ -49,7 +49,7 @@ section.section.section--centered.products-section
               
               .products__values-row 
                 .products__values-block
-                  .products__values-rub 140 #[span.rub]
+                  .products__values-rub 140 #[span.rub.products__values-rub-sign]
                 .products__values-block
                   a.btn Заказать
 
