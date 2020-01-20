@@ -6,6 +6,10 @@
     background-position-y: 35%;
   }
 
+  @include phones {
+    background: none;
+  }
+
   @include berries {
     &:before {
       background-image: imgPath("decor/bars-and-berries.png");
@@ -13,7 +17,12 @@
       left: 0;
       width: 161px;
       height: 315px;
+
+      @include phones {
+        display: none;
+      }
     }
+
   }
 
 }

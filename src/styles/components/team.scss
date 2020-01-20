@@ -7,6 +7,10 @@
     padding: 0 10%;
     margin-left: -20px;
   }
+
+  @include phones {
+    margin-left: -70px;
+  }
 }
 
 .team__item {
@@ -20,6 +24,11 @@
     margin-right: 0px;
     margin-left: 20px;
     margin-bottom: 35px;
+  }
+
+  @include phones {
+    width: calc(100% / 2 - 70px);
+    margin-left: 70px;
   }
 
   &:last-child {

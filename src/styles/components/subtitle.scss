@@ -1,5 +1,9 @@
 .subtitle {
   padding: 0 26%;
   text-align: center;
+
+  @include phones {
+    padding: 0 4%;
+  }
 }
 

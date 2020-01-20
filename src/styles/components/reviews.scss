@@ -1,6 +1,7 @@
 .reviews {
   background: imgPath("decor/strawberry-cereal.png") right 20px top 10px no-repeat;
-
+  background-size: 113px 79px;
+  
   @include berries {
     &:before {
       background-image: imgPath("decor/side-round-leaf.png");

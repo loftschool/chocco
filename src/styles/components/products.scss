@@ -80,6 +80,10 @@
   @include tablets {
     padding: 0 10%;
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .products__text {
