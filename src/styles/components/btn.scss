@@ -10,10 +10,6 @@
   border-radius: 100px;
   line-height: 1;
 
-  &:hover {
-    background: #0f5a47;
-    text-decoration: none;
-  }
 
   &--shadowed {
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4);
@@ -28,7 +24,12 @@
     &--white {
       background: #fff;
       color: $darkGreen;
-      text-decoration: none !important;
+
+      &:hover {
+        background: #0f5a47;
+        text-decoration: none;
+        color: #fff;
+      }
     }
 
     &--transparent {
@@ -37,7 +38,7 @@
       color: $darkGreen;
 
       &:hover {
-        background: transparent !important;
+        background: transparent;
         text-decoration: underline;
       }
     }

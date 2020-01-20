@@ -5,6 +5,11 @@
   background-color: $blue;
   color: #fff;
 
+  @include tablets {
+    background: imgPath("decor/big-leaf.png") right top 20% no-repeat;
+    background-color: $blue;
+  }
+
   @include berries {
     &:after {
       background-image: imgPath("decor/berries-and-leaves.png");
@@ -23,6 +28,15 @@
       bottom: -47px;
       left: 2%;
     }
+
+    @include tablets {
+
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+
   }
 }
 
@@ -37,6 +51,26 @@
 
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  @include tablets {
+    &:before {
+      content: "";
+      display: block;
+      background: imgPath('decor/bars-full-pic.png') center center / contain no-repeat;
+      height: 32vh;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
 }
 
 .hero__main-title {
@@ -50,11 +84,22 @@
 .hero__subtitle {
   font-size: 21px;
   margin-bottom: 26px;
+
+  @include tablets {
+    padding: 0 18%;
+  }
 }
 
 .hero__icons {
   display: flex;
   align-items: flex-start;
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__icon-item {

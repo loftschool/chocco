@@ -5,6 +5,14 @@ html {
 
 html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -37,7 +45,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 950px;
+  max-width: 950px;
+  width: 95%;
   position: relative;
 }
 

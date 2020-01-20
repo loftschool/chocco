@@ -1,0 +1,11 @@
+@mixin tablets ($mobileFirst: true) {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
