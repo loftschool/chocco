@@ -20,6 +20,14 @@ gulp.task("styles", () => {
     .pipe($gp.plumber())
     .pipe($gp.sassGlob())
     .pipe($gp.sass().on("error", $gp.sass.logError))
+    .pipe($gp.groupCssMediaQueries())
+    .pipe(
+      $gp.pxtorem({
+        rootValue: 16,
+        propList: ["*", "!*border*"],
+        selectorBlackList: [/^html$/]
+      })
+    )
     .pipe($gp.rename("main.min.css"))
     .pipe($gp.if(env === "development", $gp.sourcemaps.write()))
     .pipe(gulp.dest(`${config.DIST_DIR}`))
