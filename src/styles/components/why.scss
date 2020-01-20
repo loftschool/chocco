@@ -2,6 +2,10 @@
   background: imgPath("decor/side-leaf.png") left top 57% no-repeat;
   position: relative;
 
+  @include tablets {
+    background-position-y: 35%;
+  }
+
   @include berries {
     &:before {
       background-image: imgPath("decor/bars-and-berries.png");
