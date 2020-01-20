@@ -1,12 +1,26 @@
 .team {
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    flex-wrap: wrap;
+    padding: 0 10%;
+    margin-left: -20px;
+  }
 }
 
 .team__item {
   flex: 1;
   text-align: center;
   margin-right: 20px;
+
+  @include tablets {
+    flex: initial;
+    width: calc(100% / 2 - 20px);
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -43,6 +57,12 @@
     border-bottom: 0;
     display: block;
     margin-left: 5px;
+  }
+}
+
+.team__content {
+  @include tablets {
+    display: none;
   }
 }
 
