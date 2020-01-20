@@ -1,9 +1,13 @@
 .order {
-  background: 
-  imgPath("decor/lonely-blackberry.png") bottom 14% left 2% no-repeat,
-  imgPath("decor/lonely-leaf.png") right 1% bottom 16% no-repeat,
-  imgPath("bg/order.jpg") center center / cover no-repeat;
+  background:
+    imgPath("decor/lonely-blackberry.png") bottom 14% left 2% no-repeat,
+    imgPath("decor/lonely-leaf.png") right 1% bottom 16% no-repeat,
+    imgPath("bg/order.jpg") center center / cover no-repeat;
   color: $darkGreen;
+
+  @include tablets {
+    background: imgPath("bg/order.jpg") center center / cover no-repeat;
+  }
 }
 
 .title.order__title {
