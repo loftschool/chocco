@@ -5,13 +5,18 @@ $darkGreen: #0b4d3c;
 
 $z-berries: 1;
 $z-content: 10;
+$z-overlay: 100;
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,700&display=swap&subset=cyrillic');
+
 
 @import "./layout/mixins.scss";
 @import "./layout/fonts.scss";
 @import "./layout/media.scss";
-@import "./layout/normalize.scss";
+@import "../../node_modules/normalize.css/normalize";
 @import "./layout/base.scss";
+@import "../../node_modules/bxslider/dist/jquery.bxslider.min";
+
+
 
 @import "./components/*.scss";

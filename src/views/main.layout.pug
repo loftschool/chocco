@@ -15,3 +15,15 @@ html(lang="ru")
     .wrapper
       .maincontent
         block content
+
+      .fullscreen-menu
+        a(href="").fullscreen-menu__close x
+        - var items = ["О нас", "Батончики", "Команда", "Меню", "Отзывы", "Как мы работаем", "Контакты"];
+        ul.menu.menu--vertical
+          each item in items
+            li.menu__item
+              a.menu__item-link(href="") #{item}
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js")
+    script(src="main.bundle.js")

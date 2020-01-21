@@ -1,58 +1,62 @@
 section.section.section--centered.products-section
   .container
-    ul.products
-      li.products__item
-        .products__container
-          .products__col
-            .products__image
-              +image("content/bars-1.png", "батончик морские водоросли", "products__image-elem")
-          .products__col
-            .products__ingredients
-              .ingredients
-                .ingredients__button
-                  .ingredients__button-icon
-                    +icon("chocolate-bar", "ingredients__button-icon-elem")
-                  .ingredients__button-text состав
-                .ingredients__dropdown
-                  -
-                    var items = [
-                      ['oat', "Овес", "25г"],
-                      ['seaweed', "Мор. водоросли", "25г"],
-                      ['almond', "Миндаль", "25г"],
-                      ['washing-powder', "Сухое молоко", "25г"],
-                      ['seeds', "Тыкв. семечки", "25г"],
-                      ['apitherapy', "Зам. сахара", "25г"],
-                      ['beans', "Какао бобы", "25г"],
-                    ];
+    .products-slider
+      ul.products
+        - for (var i = 0; i < 3; i++)
+          li.products__item
+            .products__container
+              .products__col
+                .products__image
+                  +image("content/bars-1.png", "батончик морские водоросли", "products__image-elem")
+              .products__col
+                .products__ingredients
+                  .ingredients
+                    .ingredients__button
+                      .ingredients__button-icon
+                        +icon("chocolate-bar", "ingredients__button-icon-elem")
+                      .ingredients__button-text состав
+                    .ingredients__dropdown
+                      -
+                        var items = [
+                          ['oat', "Овес", "25г"],
+                          ['seaweed', "Мор. водоросли", "25г"],
+                          ['almond', "Миндаль", "25г"],
+                          ['washing-powder', "Сухое молоко", "25г"],
+                          ['seeds', "Тыкв. семечки", "25г"],
+                          ['apitherapy', "Зам. сахара", "25г"],
+                          ['beans', "Какао бобы", "25г"],
+                        ];
 
-                  table.ingredients__table
-                    each item in items
-                      tr.ingredients__table-row
-                        td.ingredients__table-cell.ingredients__icon-container
-                          +icon(item[0], "ingredients__icon")
-                        td.ingredients__table-cell.ingredients__text-container
-                          span.ingredients__text #{item[1]}
-                        td.ingredients__table-cell
-                          span.ingredients__text #{item[2]}
+                      table.ingredients__table
+                        each item in items
+                          tr.ingredients__table-row
+                            td.ingredients__table-cell.ingredients__icon-container
+                              +icon(item[0], "ingredients__icon")
+                            td.ingredients__table-cell.ingredients__text-container
+                              span.ingredients__text #{item[1]}
+                            td.ingredients__table-cell
+                              span.ingredients__text #{item[2]}
 
-            .products__title Батончик морские водоросли
-            .products__text
-              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ipsum autem soluta illo saepe modi eos, iure doloremque totam, praesentium asperiores! Repudiandae voluptatem officia esse quasi, tempore culpa vel incidunt!
-            table.products__values 
-              tr.products__values-row 
-                td.products__values-block
-                  .products__values-title Калорийность
-                  .products__values-amount 120 ккал
-                td.products__values-block
-                  .products__values-title Вес
-                  .products__values-amount 98 грамм
-              
-              tr.products__values-row 
-                td.products__values-block
-                  .products__values-rub 140 #[span.rub.products__values-rub-sign]
-                td.products__values-block
-                  a.btn Заказать
+                .products__title Батончик морские водоросли
+                .products__text
+                  p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ipsum autem soluta illo saepe modi eos, iure doloremque totam, praesentium asperiores! Repudiandae voluptatem officia esse quasi, tempore culpa vel incidunt!
+                table.products__values 
+                  tr.products__values-row 
+                    td.products__values-block
+                      .products__values-title Калорийность
+                      .products__values-amount 120 ккал
+                    td.products__values-block
+                      .products__values-title Вес
+                      .products__values-amount 98 грамм
+                  
+                  tr.products__values-row 
+                    td.products__values-block
+                      .products__values-rub 140 #[span.rub.products__values-rub-sign]
+                    td.products__values-block
+                      a.btn Заказать
 
+      button.products-slider__btn.products-slider__btn--next >
+      button.products-slider__btn.products-slider__btn--prev <
 
               
 

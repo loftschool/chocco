@@ -15,6 +15,14 @@
   }
 }
 
+.products__item {
+  padding-left: 65px;
+
+  @include tablets {
+    padding-left: 0;
+  }
+}
+
 .products__col {
   width: 50%;
   margin-right: 1%;
