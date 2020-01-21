@@ -18,7 +18,7 @@
     display: block;
     position: absolute;
     background: center center / contain no-repeat;
-    z-index: 1;
+    z-index: $z-berries;
   }
 
   @content;
