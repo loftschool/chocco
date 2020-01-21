@@ -17,6 +17,16 @@
   flex: 1;
   text-align: center;
   margin-right: 20px;
+  cursor: pointer;
+
+  &.active {
+    .team__title {
+      &:after {
+        content: "";
+        transform: rotate(-180deg);
+      }
+    }
+  }
 
   @include tablets {
     flex: initial;
@@ -70,9 +80,9 @@
 }
 
 .team__content {
-  @include tablets {
-    display: none;
-  }
+  height: 0px;
+  overflow: hidden;
+  transition: height .3s;
 }
 
 .team__content-text {
