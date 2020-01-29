@@ -55,7 +55,8 @@ gulp.task("scripts", () => {
       $webpack(
         {
           ...require("./webpack.config"),
-          mode: env
+          // mode: env
+          mode: "development"
         },
         webpack
       )
