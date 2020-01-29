@@ -1,5 +1,5 @@
 @function imgPath($path) {
-  @return url("/assets/images/"+ $path);
+  @return url("assets/images/"+ $path);
 }
 
 @mixin centered() {

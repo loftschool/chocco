@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'rouble';
-  src: url("/assets/fonts/rouble-webfont.woff2") format("woff2");
+  src: url("assets/fonts/rouble-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -512,7 +512,7 @@ a:hover {
   right: 0;
   width: 4.1875rem;
   height: 1.3125rem;
-  background: url("/assets/images/decor/separator.png") center center no-repeat;
+  background: url("assets/images/decor/separator.png") center center no-repeat;
   transform: translateX(50%);
 }
 
@@ -709,7 +709,7 @@ a:hover {
 }
 
 .hamburger {
-  background: url("/assets/images/icons/hamburger.png") center center/contain no-repeat;
+  background: url("assets/images/icons/hamburger.png") center center/contain no-repeat;
   width: 1.5rem;
   height: 1.375rem;
   display: none;
@@ -727,7 +727,7 @@ a:hover {
 }
 
 .hero {
-  background: url("/assets/images/decor/chocolates.png") left 78% center no-repeat, url("/assets/images/decor/big-leaf.png") right bottom no-repeat;
+  background: url("assets/images/decor/chocolates.png") left 78% center no-repeat, url("assets/images/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   color: #fff;
   position: relative;
@@ -743,7 +743,7 @@ a:hover {
 }
 
 .hero:after {
-  background-image: url("/assets/images/decor/berries-and-leaves.png");
+  background-image: url("assets/images/decor/berries-and-leaves.png");
   width: 28.75rem;
   height: 21.3125rem;
   position: absolute;
@@ -752,7 +752,7 @@ a:hover {
 }
 
 .hero:before {
-  background-image: url("/assets/images/decor/corner-leaf.png");
+  background-image: url("assets/images/decor/corner-leaf.png");
   width: 3.6875rem;
   height: 7rem;
   position: absolute;
@@ -832,7 +832,7 @@ a:hover {
 }
 
 .how-section:before {
-  background-image: url("/assets/images/decor/blackberry-and-leaves.png");
+  background-image: url("assets/images/decor/blackberry-and-leaves.png");
   width: 12.3125rem;
   height: 16.5rem;
   bottom: -6.5rem;
@@ -967,7 +967,7 @@ a:hover {
 }
 
 .order {
-  background: url("/assets/images/decor/lonely-blackberry.png") bottom 14% left 2% no-repeat, url("/assets/images/decor/lonely-leaf.png") right 1% bottom 16% no-repeat, url("/assets/images/bg/order.jpg") center center/cover no-repeat;
+  background: url("assets/images/decor/lonely-blackberry.png") bottom 14% left 2% no-repeat, url("assets/images/decor/lonely-leaf.png") right 1% bottom 16% no-repeat, url("assets/images/bg/order.jpg") center center/cover no-repeat;
   color: #0b4d3c;
 }
 
@@ -977,13 +977,13 @@ a:hover {
 
 .phone-number {
   padding-left: 0.9375rem;
-  background: url("/assets/images/icons/phone.png") left center no-repeat;
+  background: url("assets/images/icons/phone.png") left center no-repeat;
   font-size: 1.5rem;
   white-space: nowrap;
 }
 
 .products-menu-section {
-  background: url("/assets/images/bg/menu.jpg") center center/cover no-repeat;
+  background: url("assets/images/bg/menu.jpg") center center/cover no-repeat;
   position: relative;
   color: #fff;
 }
@@ -1087,7 +1087,7 @@ a:hover {
 }
 
 .products-section:before {
-  background-image: url("/assets/images/decor/grey-striped-leaf.png");
+  background-image: url("assets/images/decor/grey-striped-leaf.png");
   width: 10.5625rem;
   height: 36.125rem;
   bottom: -22.25rem;
@@ -1095,7 +1095,7 @@ a:hover {
 }
 
 .products-section:after {
-  background-image: url("/assets/images/decor/blackberries.png");
+  background-image: url("assets/images/decor/blackberries.png");
   width: 8.4375rem;
   height: 7rem;
   bottom: -4.625rem;
@@ -1163,7 +1163,7 @@ a:hover {
 }
 
 .products__image:before {
-  background-image: url("/assets/images/decor/leaf-1.png");
+  background-image: url("assets/images/decor/leaf-1.png");
   width: 4.6875rem;
   height: 5.75rem;
   top: 23%;
@@ -1171,7 +1171,7 @@ a:hover {
 }
 
 .products__image:after {
-  background-image: url("/assets/images/decor/leaf-2.png");
+  background-image: url("assets/images/decor/leaf-2.png");
   width: 6.1875rem;
   height: 4.5625rem;
   right: 12%;
@@ -1240,7 +1240,7 @@ a:hover {
 }
 
 .radio--checkbox .radio__visible:after {
-  background: url("/assets/images/icons/tick.png") center center no-repeat;
+  background: url("assets/images/icons/tick.png") center center no-repeat;
 }
 
 .radio__elem {
@@ -1317,7 +1317,7 @@ a:hover {
 }
 
 .reviews {
-  background: url("/assets/images/decor/strawberry-cereal.png") right 1.25rem top 0.625rem no-repeat;
+  background: url("assets/images/decor/strawberry-cereal.png") right 1.25rem top 0.625rem no-repeat;
   background-size: 7.0625rem 4.9375rem;
   position: relative;
 }
@@ -1332,7 +1332,7 @@ a:hover {
 }
 
 .reviews:before {
-  background-image: url("/assets/images/decor/side-round-leaf.png");
+  background-image: url("assets/images/decor/side-round-leaf.png");
   width: 6.375rem;
   height: 20.0625rem;
   bottom: -10rem;
@@ -1340,7 +1340,7 @@ a:hover {
 }
 
 .reviews:after {
-  background-image: url("/assets/images/decor/assorted-berries.png");
+  background-image: url("assets/images/decor/assorted-berries.png");
   width: 8.4375rem;
   height: 12.0625rem;
   bottom: -5.4375rem;
@@ -1352,7 +1352,7 @@ a:hover {
 }
 
 .reviews__display {
-  background: url("/assets/images/decor/drown-berries.png") right top no-repeat #f8faf9;
+  background: url("assets/images/decor/drown-berries.png") right top no-repeat #f8faf9;
   padding: 3.125rem 2.8125rem 2.1875rem;
   display: flex;
   overflow: hidden;
@@ -1464,7 +1464,7 @@ a:hover {
   bottom: -2.875rem;
   left: 2.125rem;
   display: block;
-  background-image: url("/assets/images/decor/single-berry.png");
+  background-image: url("assets/images/decor/single-berry.png");
   width: 6.5rem;
   height: 7.125rem;
 }
@@ -1562,7 +1562,7 @@ a:hover {
 }
 
 .video:before {
-  background-image: url("/assets/images/decor/video-leaf-top.png");
+  background-image: url("assets/images/decor/video-leaf-top.png");
   width: 5.625rem;
   height: 4.8125rem;
   top: -16%;
@@ -1570,7 +1570,7 @@ a:hover {
 }
 
 .video:after {
-  background-image: url("/assets/images/decor/video-leaf-bottom.png");
+  background-image: url("assets/images/decor/video-leaf-bottom.png");
   width: 4.5rem;
   height: 8.4375rem;
   bottom: -10%;
@@ -1578,7 +1578,7 @@ a:hover {
 }
 
 .why {
-  background: url("/assets/images/decor/side-leaf.png") left top 57% no-repeat;
+  background: url("assets/images/decor/side-leaf.png") left top 57% no-repeat;
   position: relative;
   position: relative;
 }
@@ -1593,7 +1593,7 @@ a:hover {
 }
 
 .why:before {
-  background-image: url("/assets/images/decor/bars-and-berries.png");
+  background-image: url("assets/images/decor/bars-and-berries.png");
   bottom: -8.3125rem;
   left: 0;
   width: 10.0625rem;
@@ -1667,7 +1667,7 @@ a:hover {
   }
 
   .hero {
-    background: url("/assets/images/decor/big-leaf.png") right top 20% no-repeat;
+    background: url("assets/images/decor/big-leaf.png") right top 20% no-repeat;
     background-color: #61c4d9;
   }
 
@@ -1688,7 +1688,7 @@ a:hover {
   .hero__title-section:before {
     content: "";
     display: block;
-    background: url("/assets/images/decor/bars-full-pic.png") center center/contain no-repeat;
+    background: url("assets/images/decor/bars-full-pic.png") center center/contain no-repeat;
     height: 32vh;
     margin-bottom: 1.875rem;
     width: 100%;
@@ -1704,7 +1704,7 @@ a:hover {
   }
 
   .order {
-    background: url("/assets/images/bg/order.jpg") center center/cover no-repeat;
+    background: url("assets/images/bg/order.jpg") center center/cover no-repeat;
   }
 
   .products__container {
